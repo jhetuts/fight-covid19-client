@@ -1,0 +1,28 @@
+.History {
+  padding: 20px;
+  max-height: 60%;
+  overflow-y: auto;
+}
+.History div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 1px solid #2c2c2c;
+  background: #ccc;
+  margin-bottom: 5px;
+}
+
+.History .Victory {
+  background: #16a22d;
+}
+
+.History .Defeat {
+  background: #cc3a00;
+}
+.History div p {
+  padding: 0 10px;
+}
+.History div p:last-child {
+  font-size: 75%;
+}

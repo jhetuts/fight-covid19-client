@@ -1,0 +1,51 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: auto;
+  width: 300px;
+}
+
+.Login h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2c2c2c;
+  border-right: 1px solid #2c2c2c;
+}
+.Login form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.Login form input,
+.Login form button {
+  display: block;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.Login form input {
+  border-bottom: 1px solid #2c2c2c;
+}
+.Login form input[type="email"] {
+  border-left: 1px solid #2c2c2c;
+}
+.Login form input[type="password"] {
+  border-right: 1px solid #2c2c2c;
+  border-bottom: none;
+}
+.Login form button {
+  border: 1px solid transparent;
+  border-top: 1px solid #2c2c2c;
+  border-left: 1px solid #2c2c2c;
+  cursor: pointer;
+}
+.Login form button:hover {
+  border: 1px solid #2c2c2c;
+}
+.Login p {
+  text-align: center;
+  font-size: 75%;
+}

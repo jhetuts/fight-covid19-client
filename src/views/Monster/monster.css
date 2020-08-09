@@ -1,0 +1,63 @@
+.Monster {
+  display: flex;
+  position: relative;
+  width: calc(50% - 20px);
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.Monster p {
+  position: absolute;
+  width: 10px;
+  left: 0;
+  bottom: 0;
+}
+
+.Virus {
+  position: relative;
+  animation: bounce infinite 2s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 20px;
+  }
+  50% {
+    left: 40px;
+  }
+  75% {
+    left: 20px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.attack {
+  position: relative;
+  animation: attack 500ms ease-in-out;
+}
+
+@keyframes attack {
+  0% {
+    left: 0;
+  }
+
+  25% {
+    left: 50px;
+  }
+  50% {
+    left: 100px;
+  }
+  75% {
+    left: 50px;
+  }
+  100% {
+    left: 0;
+  }
+}

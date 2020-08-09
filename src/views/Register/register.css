@@ -1,0 +1,71 @@
+.Register {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: auto;
+  width: 300px;
+}
+
+.Register h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2c2c2c;
+  border-right: 1px solid #2c2c2c;
+}
+.Register form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.Register form input,
+.Register form button {
+  display: block;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.Register form input[name="firstName"] {
+  border-bottom: 1px solid #2c2c2c;
+  border-left: 1px solid #2c2c2c;
+}
+.Register form input[name="lastName"] {
+  border-bottom: 1px solid #2c2c2c;
+  border-right: 1px solid #2c2c2c;
+}
+.Register form input[name="email"] {
+  border-bottom: 1px solid #2c2c2c;
+  border-left: 1px solid #2c2c2c;
+}
+.Register form input[name="password"] {
+  border-bottom: 1px solid #2c2c2c;
+  border-right: 1px solid #2c2c2c;
+}
+.Register form input[name="confirmpassword"] {
+  border-left: 1px solid #2c2c2c;
+}
+.Register form button {
+  border: 1px solid transparent;
+}
+.Register form button:first-child {
+  border-top: 1px solid #2c2c2c;
+  border-right: 1px solid #2c2c2c;
+}
+.Register form button:last-child {
+  border-top: 1px solid #2c2c2c;
+  border-left: 1px solid #2c2c2c;
+}
+.Register form button:hover {
+  border: 1px solid #2c2c2c;
+  cursor: pointer;
+}
+.Register form img {
+  border-radius: 50%;
+  width: 50%;
+  margin: 0 auto;
+}
+.Register p {
+  text-align: center;
+  font-size: 75%;
+}
