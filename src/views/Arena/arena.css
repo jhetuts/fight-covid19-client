@@ -5,7 +5,7 @@
   text-align: center;
   justify-content: space-evenly;
 }
-.Arena h2 span {
+.Arena h3 span {
   text-decoration: underline;
   color: #28965a;
 }
@@ -65,4 +65,23 @@
   height: 100%;
   overflow-y: auto;
   max-width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .Arena {
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  .welcome {
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .records {
+    height: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+    font-size: 75%;
+  }
 }

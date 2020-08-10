@@ -12,3 +12,12 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .Countdown {
+    width: 30px;
+    height: 30px;
+    font-size: 75%;
+    top: -30px;
+  }
+}

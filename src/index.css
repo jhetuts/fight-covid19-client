@@ -48,6 +48,7 @@ button {
 .App h1 {
   text-decoration: line-through;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -62,4 +63,16 @@ main {
 
 .error {
   color: #bc412b;
+}
+
+@media screen and (max-width: 768px) {
+  .App h1 {
+    width: 50%;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+  main {
+    height: auto;
+  }
 }

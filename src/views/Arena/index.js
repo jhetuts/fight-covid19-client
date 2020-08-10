@@ -31,13 +31,14 @@ const Arena = ({
     <div className="Arena">
       <div className="welcome">
         <h2>
-          {auth.user.welcome ? auth.user.welcome : "Welcome to the Arena!"}{" "}
-          <br />
-          Player <span>{auth.user.fullName}</span>
+          {auth.user.welcome ? auth.user.welcome : "Welcome to the Arena!"}
         </h2>
         <p>Where you will be fighting against evil viruses!</p>
         <div className="settings">
-          <h3>Are you up for the challenge?</h3>
+          <h3>
+            <span>{auth.user.fullName}</span>
+          </h3>
+          <h4>Are you up for the challenge?</h4>
           <p>How long do you think can you last? </p>
           <p>
             <input

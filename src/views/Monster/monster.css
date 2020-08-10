@@ -25,13 +25,13 @@
     left: 0;
   }
   25% {
-    left: 20px;
+    left: 10px;
   }
   50% {
-    left: 40px;
+    left: 20px;
   }
   75% {
-    left: 20px;
+    left: 10px;
   }
   100% {
     left: 0;
@@ -43,21 +43,8 @@
   animation: attack 500ms ease-in-out;
 }
 
-@keyframes attack {
-  0% {
-    left: 0;
-  }
-
-  25% {
-    left: 50px;
-  }
-  50% {
-    left: 100px;
-  }
-  75% {
-    left: 50px;
-  }
-  100% {
-    left: 0;
+@media screen and (max-width: 768px) {
+  .Monster p {
+    width: 5px;
   }
 }

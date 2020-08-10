@@ -29,15 +29,21 @@
     right: 0;
   }
   25% {
-    right: 20px;
+    right: 10px;
   }
   50% {
-    right: 40px;
+    right: 20px;
   }
   75% {
-    right: 20px;
+    right: 10px;
   }
   100% {
     right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Player p {
+    width: 5px;
   }
 }

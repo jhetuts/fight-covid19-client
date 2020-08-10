@@ -26,3 +26,13 @@
 .History div p:last-child {
   font-size: 75%;
 }
+
+@media screen and (max-width: 768px) {
+  .History {
+    max-height: 300px;
+    padding: 10px;
+  }
+  .History div {
+    margin-bottom: 2px;
+  }
+}
