@@ -224,6 +224,18 @@ const Stage = ({
     return setListLogs([]);
   };
 
+  const displayBgAttack = (action) => {
+    const newAction = action.toLowerCase();
+    if (
+      newAction.includes("attack monster") ||
+      newAction.includes("power attack") ||
+      newAction.includes("health potion")
+    ) {
+      return "#65B540";
+    }
+    return "#820263";
+  };
+
   useEffect(() => {
     if (gameConfig.gameOver) {
       checkWinner();
@@ -287,7 +299,14 @@ const Stage = ({
       <div className="rightCon">
         <div className="logs">
           {listLogs.length !== 0 &&
-            listLogs.map((logs, key) => <p key={key}>{logs.description}</p>)}
+            listLogs.map((logs, key) => (
+              <p
+                key={key}
+                style={{ backgroundColor: displayBgAttack(logs.action) }}
+              >
+                {logs.description}
+              </p>
+            ))}
         </div>
       </div>
       {gameConfig.gameOver && (
