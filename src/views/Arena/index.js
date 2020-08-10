@@ -9,7 +9,15 @@ import History from "../../components/Common/History";
 
 import "./arena.css";
 
-const Arena = ({ auth, gameConfig, setTimeLimit, history, logs }) => {
+const Arena = ({
+  auth,
+  gameConfig,
+  setTimeLimit,
+  history,
+  logs,
+  getLogs,
+  resetGame,
+}) => {
   const start = () => {
     history.push("/stage");
   };
@@ -61,4 +69,6 @@ const mapStateToProps = (state) => ({
 });
 export default connect(mapStateToProps, {
   setTimeLimit,
+  getLogs,
+  resetGame,
 })(withRouter(Arena));
